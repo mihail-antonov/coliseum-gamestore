@@ -1,0 +1,15 @@
+D:\projects\coliseum-gamestore\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+D:\projects\coliseum-gamestore\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.json
+D:\projects\coliseum-gamestore\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.dev.json
+D:\projects\coliseum-gamestore\Data\bin\Debug\netcoreapp3.1\Data.dll
+D:\projects\coliseum-gamestore\Data\bin\Debug\netcoreapp3.1\Data.pdb
+D:\projects\coliseum-gamestore\Data\bin\Debug\netcoreapp3.1\Models.dll
+D:\projects\coliseum-gamestore\Data\bin\Debug\netcoreapp3.1\Models.pdb
+D:\projects\coliseum-gamestore\Data\obj\Debug\netcoreapp3.1\Data.csproj.AssemblyReference.cache
+D:\projects\coliseum-gamestore\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+D:\projects\coliseum-gamestore\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+D:\projects\coliseum-gamestore\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+D:\projects\coliseum-gamestore\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+D:\projects\coliseum-gamestore\Data\obj\Debug\netcoreapp3.1\Data.dll
+D:\projects\coliseum-gamestore\Data\obj\Debug\netcoreapp3.1\Data.pdb
+D:\projects\coliseum-gamestore\Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache

@@ -1,0 +1,9 @@
+D:\projects\coliseum-gamestore\Models\bin\Debug\netcoreapp3.1\Models.deps.json
+D:\projects\coliseum-gamestore\Models\bin\Debug\netcoreapp3.1\Models.dll
+D:\projects\coliseum-gamestore\Models\bin\Debug\netcoreapp3.1\Models.pdb
+D:\projects\coliseum-gamestore\Models\obj\Debug\netcoreapp3.1\Models.csproj.AssemblyReference.cache
+D:\projects\coliseum-gamestore\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
+D:\projects\coliseum-gamestore\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
+D:\projects\coliseum-gamestore\Models\obj\Debug\netcoreapp3.1\Models.csproj.CoreCompileInputs.cache
+D:\projects\coliseum-gamestore\Models\obj\Debug\netcoreapp3.1\Models.dll
+D:\projects\coliseum-gamestore\Models\obj\Debug\netcoreapp3.1\Models.pdb
