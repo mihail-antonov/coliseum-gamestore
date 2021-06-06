@@ -10,6 +10,7 @@
         "dependencies": {
           "Data": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "3.1.15",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.15",
           "Microsoft.Extensions.DependencyInjection": "3.1.15"
         },
         "runtime": {

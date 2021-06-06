@@ -16,9 +16,10 @@
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.EnableSensitiveDataLogging();
+            
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=localhost;Database=coliseum-gamestore;Trusted_Connection=True");
+                optionsBuilder.UseSqlServer("Server=localhost;Database=coliseum-gamestore;Trusted_Connection=True;");
             }
         }
 

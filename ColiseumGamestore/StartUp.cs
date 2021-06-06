@@ -12,9 +12,10 @@ namespace TheRealmGamestore
         static void ConfigureServices()
         {
             var services = new ServiceCollection();
+            
             services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseSqlServer("Server=localhost;Database=coliseum-gamestore;Trusted_Connection=True");
+                options.UseSqlServer("Server=localhost;Database=coliseum-gamestore;Trusted_Connection=True;");
             });
 
             ServiceProvider = services.BuildServiceProvider();
