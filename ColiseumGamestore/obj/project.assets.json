@@ -1508,6 +1508,20 @@
         "runtime": {
           "bin/placeholder/Models.dll": {}
         }
+      },
+      "Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Data": "1.0.0",
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repositories.dll": {}
+        }
       }
     }
   },
@@ -5711,6 +5725,11 @@
       "type": "project",
       "path": "../Models/Models.csproj",
       "msbuildProject": "../Models/Models.csproj"
+    },
+    "Repositories/1.0.0": {
+      "type": "project",
+      "path": "../Repositories/Repositories.csproj",
+      "msbuildProject": "../Repositories/Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5718,7 +5737,8 @@
       "Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.15",
-      "Microsoft.Extensions.DependencyInjection >= 3.1.15"
+      "Microsoft.Extensions.DependencyInjection >= 3.1.15",
+      "Repositories >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5750,6 +5770,9 @@
           "projectReferences": {
             "D:\\projects\\coliseum-gamestore\\Data\\Data.csproj": {
               "projectPath": "D:\\projects\\coliseum-gamestore\\Data\\Data.csproj"
+            },
+            "D:\\projects\\coliseum-gamestore\\Repositories\\Repositories.csproj": {
+              "projectPath": "D:\\projects\\coliseum-gamestore\\Repositories\\Repositories.csproj"
             }
           }
         }

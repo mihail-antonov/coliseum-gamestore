@@ -6,12 +6,10 @@
     public interface IGameRepository
     {
         Game GetGameById(int id);
-        Game GetGameByStudio(string studio);
-
+        Game GetGameByTitle(string title);
         IEnumerable<Game> GetAllGames { get; }
-
-        void Add(Game game);
-        void Update(Game game);
-        void Delete(Game game);
+        int Add(Game car);
+        void Update(Game car);
+        void Delete(int car);
     }
 }

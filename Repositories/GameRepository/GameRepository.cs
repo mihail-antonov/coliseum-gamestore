@@ -6,23 +6,35 @@
     using Microsoft.EntityFrameworkCore;
     using System.Collections.Generic;
 
-    class GameRepository : IGameRepository
+    public class GameRepository : IGameRepository
     {
         private readonly ApplicationDbContext _appDbContext;
+
         public GameRepository(ApplicationDbContext appDbContext)
         {
             _appDbContext = appDbContext;
         }
 
-        public IEnumerable<Game> GetAllGames => _appDbContext.Games.Include(x => x.Studio)
-                                                                    .Include(x => x.GameDetails).ThenInclude(x => x.Detail)
-                                                                    .AsNoTracking().ToList();
+        public IEnumerable<Game> GetAllGames => _appDbContext.Games
+                                                            .Include(x => x.Studio)
+                                                            .Include(x => x.GameDetails).ThenInclude(x => x.Detail)
+                                                            .AsNoTracking()
+                                                            .ToList();
 
-        public Game GetGameById(int id) => _appDbContext.Games.Include(x => x.Studio)
-                                                                    .Include(x => x.GameDetails).ThenInclude(x => x.Detail)
-                                                                    .AsNoTracking().SingleOrDefault(x => x.Id == id);
+        public Game GetGameById(int id) => _appDbContext.Games
+                                                            .Include(x => x.Studio)
+                                                            .Include(x => x.GameDetails).ThenInclude(x => x.Detail)
+                                                            .AsNoTracking()
+                                                            .SingleOrDefault(x => x.Id == id);
 
-        public void Add(Game game)
+        public Game GetGameByTitle(string title) => _appDbContext.Games
+            .Include(b => b.Studio)
+                                                                    .Include(x => x.GameDetails)
+                                                                    .ThenInclude(x => x.Detail)
+                                                                    .AsNoTracking()
+                                                                    .SingleOrDefault(x => x.Title == title);
+
+        public int Add(Game game)
         {
             _appDbContext.Games.Add(game);
             _appDbContext.SaveChanges();
@@ -43,11 +55,6 @@
             Game game = _appDbContext.Games.Find(id);
             _appDbContext.Games.Remove(game);
             _appDbContext.SaveChanges();
-        }
-
-        public void Delete(Game game)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }
