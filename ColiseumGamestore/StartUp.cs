@@ -5,6 +5,7 @@ namespace TheRealmGamestore
     using System;
     using Data;
     using System.Windows.Forms;
+
     static class StartUp
     {
         public static IServiceProvider ServiceProvider { get; set; }
