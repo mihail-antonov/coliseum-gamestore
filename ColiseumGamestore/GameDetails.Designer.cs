@@ -36,13 +36,14 @@ namespace ColiseumGamestore
             this.BtnExit = new System.Windows.Forms.Button();
             this.BtnAdd = new System.Windows.Forms.Button();
             this.GameDetailGrid = new System.Windows.Forms.DataGridView();
+            this.LabelDetailsDatabase = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GameDetailGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // LabelGameName
             // 
             this.LabelGameName.AutoSize = true;
-            this.LabelGameName.Location = new System.Drawing.Point(45, 23);
+            this.LabelGameName.Location = new System.Drawing.Point(45, 35);
             this.LabelGameName.Name = "LabelGameName";
             this.LabelGameName.Size = new System.Drawing.Size(48, 20);
             this.LabelGameName.TabIndex = 0;
@@ -50,16 +51,16 @@ namespace ColiseumGamestore
             // 
             // InputGameName
             // 
-            this.InputGameName.Location = new System.Drawing.Point(45, 46);
+            this.InputGameName.Location = new System.Drawing.Point(45, 58);
             this.InputGameName.Name = "InputGameName";
             this.InputGameName.ReadOnly = true;
-            this.InputGameName.Size = new System.Drawing.Size(180, 27);
+            this.InputGameName.Size = new System.Drawing.Size(410, 27);
             this.InputGameName.TabIndex = 1;
             // 
             // LabelGameDetails
             // 
             this.LabelGameDetails.AutoSize = true;
-            this.LabelGameDetails.Location = new System.Drawing.Point(253, 23);
+            this.LabelGameDetails.Location = new System.Drawing.Point(45, 103);
             this.LabelGameDetails.Name = "LabelGameDetails";
             this.LabelGameDetails.Size = new System.Drawing.Size(98, 20);
             this.LabelGameDetails.TabIndex = 2;
@@ -68,30 +69,32 @@ namespace ColiseumGamestore
             // ComboDetailId
             // 
             this.ComboDetailId.FormattingEnabled = true;
-            this.ComboDetailId.Location = new System.Drawing.Point(253, 45);
+            this.ComboDetailId.Location = new System.Drawing.Point(45, 126);
             this.ComboDetailId.Name = "ComboDetailId";
-            this.ComboDetailId.Size = new System.Drawing.Size(202, 28);
+            this.ComboDetailId.Size = new System.Drawing.Size(220, 28);
             this.ComboDetailId.TabIndex = 3;
             this.ComboDetailId.SelectedIndexChanged += new System.EventHandler(this.ComboDetailId_SelectedIndexChanged);
             // 
             // BtnExit
             // 
-            this.BtnExit.Location = new System.Drawing.Point(253, 106);
+            this.BtnExit.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BtnExit.Location = new System.Drawing.Point(260, 183);
             this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(138, 40);
+            this.BtnExit.Size = new System.Drawing.Size(195, 40);
             this.BtnExit.TabIndex = 4;
             this.BtnExit.Text = "Exit";
-            this.BtnExit.UseVisualStyleBackColor = true;
+            this.BtnExit.UseVisualStyleBackColor = false;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // BtnAdd
             // 
-            this.BtnAdd.Location = new System.Drawing.Point(87, 106);
+            this.BtnAdd.BackColor = System.Drawing.Color.PaleGreen;
+            this.BtnAdd.Location = new System.Drawing.Point(45, 183);
             this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(138, 40);
+            this.BtnAdd.Size = new System.Drawing.Size(188, 40);
             this.BtnAdd.TabIndex = 5;
             this.BtnAdd.Text = "Add";
-            this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.UseVisualStyleBackColor = false;
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // GameDetailGrid
@@ -102,18 +105,28 @@ namespace ColiseumGamestore
             this.GameDetailGrid.AllowUserToResizeRows = false;
             this.GameDetailGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GameDetailGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GameDetailGrid.Location = new System.Drawing.Point(45, 209);
+            this.GameDetailGrid.Location = new System.Drawing.Point(45, 271);
             this.GameDetailGrid.Name = "GameDetailGrid";
             this.GameDetailGrid.RowHeadersWidth = 51;
             this.GameDetailGrid.RowTemplate.Height = 29;
             this.GameDetailGrid.Size = new System.Drawing.Size(410, 244);
             this.GameDetailGrid.TabIndex = 6;
             // 
+            // LabelDetailsDatabase
+            // 
+            this.LabelDetailsDatabase.AutoSize = true;
+            this.LabelDetailsDatabase.Location = new System.Drawing.Point(45, 239);
+            this.LabelDetailsDatabase.Name = "LabelDetailsDatabase";
+            this.LabelDetailsDatabase.Size = new System.Drawing.Size(72, 20);
+            this.LabelDetailsDatabase.TabIndex = 7;
+            this.LabelDetailsDatabase.Text = "Database";
+            // 
             // GameDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 514);
+            this.ClientSize = new System.Drawing.Size(506, 548);
+            this.Controls.Add(this.LabelDetailsDatabase);
             this.Controls.Add(this.GameDetailGrid);
             this.Controls.Add(this.BtnAdd);
             this.Controls.Add(this.BtnExit);
@@ -139,5 +152,6 @@ namespace ColiseumGamestore
         private System.Windows.Forms.Button BtnExit;
         private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.DataGridView GameDetailGrid;
+        private System.Windows.Forms.Label LabelDetailsDatabase;
     }
 }

@@ -58,3 +58,4 @@ D:\projects\coliseum-gamestore\ColiseumGamestore\bin\Debug\netcoreapp3.1\Reposit
 D:\projects\coliseum-gamestore\ColiseumGamestore\bin\Debug\netcoreapp3.1\Repositories.pdb
 D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.Home.resources
 D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.GameDetails.resources
+D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.Properties.Resources.resources

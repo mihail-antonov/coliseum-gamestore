@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.InputId = new System.Windows.Forms.TextBox();
             this.LabelId = new System.Windows.Forms.Label();
             this.LabelTitle = new System.Windows.Forms.Label();
@@ -42,12 +43,15 @@
             this.GameGridView = new System.Windows.Forms.DataGridView();
             this.InputPrice = new System.Windows.Forms.TextBox();
             this.LabelPrice = new System.Windows.Forms.Label();
+            this.LabelGameDatabase = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.GameGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // InputId
             // 
-            this.InputId.Location = new System.Drawing.Point(40, 60);
+            this.InputId.Location = new System.Drawing.Point(41, 146);
             this.InputId.Name = "InputId";
             this.InputId.ReadOnly = true;
             this.InputId.Size = new System.Drawing.Size(251, 27);
@@ -56,7 +60,7 @@
             // LabelId
             // 
             this.LabelId.AutoSize = true;
-            this.LabelId.Location = new System.Drawing.Point(40, 37);
+            this.LabelId.Location = new System.Drawing.Point(41, 123);
             this.LabelId.Name = "LabelId";
             this.LabelId.Size = new System.Drawing.Size(24, 20);
             this.LabelId.TabIndex = 1;
@@ -65,7 +69,7 @@
             // LabelTitle
             // 
             this.LabelTitle.AutoSize = true;
-            this.LabelTitle.Location = new System.Drawing.Point(40, 100);
+            this.LabelTitle.Location = new System.Drawing.Point(41, 186);
             this.LabelTitle.Name = "LabelTitle";
             this.LabelTitle.Size = new System.Drawing.Size(38, 20);
             this.LabelTitle.TabIndex = 3;
@@ -73,7 +77,7 @@
             // 
             // InputTitle
             // 
-            this.InputTitle.Location = new System.Drawing.Point(40, 123);
+            this.InputTitle.Location = new System.Drawing.Point(41, 209);
             this.InputTitle.Name = "InputTitle";
             this.InputTitle.Size = new System.Drawing.Size(251, 27);
             this.InputTitle.TabIndex = 2;
@@ -81,7 +85,7 @@
             // LabelReleased
             // 
             this.LabelReleased.AutoSize = true;
-            this.LabelReleased.Location = new System.Drawing.Point(40, 233);
+            this.LabelReleased.Location = new System.Drawing.Point(41, 319);
             this.LabelReleased.Name = "LabelReleased";
             this.LabelReleased.Size = new System.Drawing.Size(69, 20);
             this.LabelReleased.TabIndex = 5;
@@ -89,7 +93,7 @@
             // 
             // InputReleased
             // 
-            this.InputReleased.Location = new System.Drawing.Point(40, 256);
+            this.InputReleased.Location = new System.Drawing.Point(41, 342);
             this.InputReleased.Name = "InputReleased";
             this.InputReleased.Size = new System.Drawing.Size(251, 27);
             this.InputReleased.TabIndex = 4;
@@ -97,7 +101,7 @@
             // LabelStudio
             // 
             this.LabelStudio.AutoSize = true;
-            this.LabelStudio.Location = new System.Drawing.Point(40, 295);
+            this.LabelStudio.Location = new System.Drawing.Point(41, 381);
             this.LabelStudio.Name = "LabelStudio";
             this.LabelStudio.Size = new System.Drawing.Size(52, 20);
             this.LabelStudio.TabIndex = 6;
@@ -106,39 +110,43 @@
             // InputStudioId
             // 
             this.InputStudioId.FormattingEnabled = true;
-            this.InputStudioId.Location = new System.Drawing.Point(40, 318);
+            this.InputStudioId.Location = new System.Drawing.Point(41, 404);
             this.InputStudioId.Name = "InputStudioId";
             this.InputStudioId.Size = new System.Drawing.Size(251, 28);
             this.InputStudioId.TabIndex = 7;
             // 
             // BtnCreate
             // 
-            this.BtnCreate.Location = new System.Drawing.Point(40, 361);
+            this.BtnCreate.BackColor = System.Drawing.Color.PaleGreen;
+            this.BtnCreate.Location = new System.Drawing.Point(41, 447);
             this.BtnCreate.Name = "BtnCreate";
             this.BtnCreate.Size = new System.Drawing.Size(81, 43);
             this.BtnCreate.TabIndex = 8;
             this.BtnCreate.Text = "Create";
-            this.BtnCreate.UseVisualStyleBackColor = true;
+            this.BtnCreate.UseVisualStyleBackColor = false;
             this.BtnCreate.Click += new System.EventHandler(this.BtnCreate_Click);
             // 
             // BtnUpdate
             // 
-            this.BtnUpdate.Location = new System.Drawing.Point(127, 361);
+            this.BtnUpdate.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BtnUpdate.Location = new System.Drawing.Point(128, 447);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(81, 43);
             this.BtnUpdate.TabIndex = 9;
             this.BtnUpdate.Text = "Update";
-            this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.UseVisualStyleBackColor = false;
             this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // BtnDelete
             // 
-            this.BtnDelete.Location = new System.Drawing.Point(214, 361);
+            this.BtnDelete.BackColor = System.Drawing.Color.IndianRed;
+            this.BtnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnDelete.Location = new System.Drawing.Point(215, 447);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(77, 43);
             this.BtnDelete.TabIndex = 10;
             this.BtnDelete.Text = "Delete";
-            this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.UseVisualStyleBackColor = false;
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // GameGridView
@@ -153,19 +161,19 @@
             this.GameGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GameGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GameGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GameGridView.Location = new System.Drawing.Point(335, 37);
+            this.GameGridView.Location = new System.Drawing.Point(335, 60);
             this.GameGridView.Name = "GameGridView";
             this.GameGridView.ReadOnly = true;
             this.GameGridView.RowHeadersWidth = 51;
             this.GameGridView.RowTemplate.Height = 29;
-            this.GameGridView.Size = new System.Drawing.Size(634, 367);
+            this.GameGridView.Size = new System.Drawing.Size(634, 430);
             this.GameGridView.TabIndex = 11;
             this.GameGridView.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.GameGridView_RowHeaderMouseClick);
             this.GameGridView.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.GameGridView_RowHeaderMouseDoubleClick);
             // 
             // InputPrice
             // 
-            this.InputPrice.Location = new System.Drawing.Point(40, 188);
+            this.InputPrice.Location = new System.Drawing.Point(41, 274);
             this.InputPrice.Name = "InputPrice";
             this.InputPrice.Size = new System.Drawing.Size(251, 27);
             this.InputPrice.TabIndex = 12;
@@ -173,17 +181,39 @@
             // LabelPrice
             // 
             this.LabelPrice.AutoSize = true;
-            this.LabelPrice.Location = new System.Drawing.Point(40, 163);
+            this.LabelPrice.Location = new System.Drawing.Point(41, 249);
             this.LabelPrice.Name = "LabelPrice";
             this.LabelPrice.Size = new System.Drawing.Size(41, 20);
             this.LabelPrice.TabIndex = 13;
             this.LabelPrice.Text = "Price";
             // 
+            // LabelGameDatabase
+            // 
+            this.LabelGameDatabase.AutoSize = true;
+            this.LabelGameDatabase.Location = new System.Drawing.Point(335, 37);
+            this.LabelGameDatabase.Name = "LabelGameDatabase";
+            this.LabelGameDatabase.Size = new System.Drawing.Size(72, 20);
+            this.LabelGameDatabase.TabIndex = 14;
+            this.LabelGameDatabase.Text = "Database";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ColiseumGamestore.Properties.Resources.coliseum_logo_small;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(41, 37);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(251, 83);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 450);
+            this.ClientSize = new System.Drawing.Size(1015, 542);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.LabelGameDatabase);
             this.Controls.Add(this.LabelPrice);
             this.Controls.Add(this.InputPrice);
             this.Controls.Add(this.GameGridView);
@@ -201,6 +231,7 @@
             this.Name = "Home";
             this.Text = "Home";
             ((System.ComponentModel.ISupportInitialize)(this.GameGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,6 +253,8 @@
         private System.Windows.Forms.DataGridView GameGridView;
         private System.Windows.Forms.TextBox InputPrice;
         private System.Windows.Forms.Label LabelPrice;
+        private System.Windows.Forms.Label LabelGameDatabase;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
