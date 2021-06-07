@@ -11,7 +11,8 @@
           "Data": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "3.1.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.15",
-          "Microsoft.Extensions.DependencyInjection": "3.1.15"
+          "Microsoft.Extensions.DependencyInjection": "3.1.15",
+          "Repositories": "1.0.0"
         },
         "runtime": {
           "ColiseumGamestore.dll": {}
@@ -1016,6 +1017,15 @@
         "runtime": {
           "Models.dll": {}
         }
+      },
+      "Repositories/1.0.0": {
+        "dependencies": {
+          "Data": "1.0.0",
+          "Models": "1.0.0"
+        },
+        "runtime": {
+          "Repositories.dll": {}
+        }
       }
     }
   },
@@ -1724,6 +1734,11 @@
       "sha512": ""
     },
     "Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Repositories/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

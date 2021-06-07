@@ -45,7 +45,6 @@ D:\projects\coliseum-gamestore\ColiseumGamestore\bin\Debug\netcoreapp3.1\Models.
 D:\projects\coliseum-gamestore\ColiseumGamestore\bin\Debug\netcoreapp3.1\Data.pdb
 D:\projects\coliseum-gamestore\ColiseumGamestore\bin\Debug\netcoreapp3.1\Models.pdb
 D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.csproj.AssemblyReference.cache
-D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.Form1.resources
 D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.csproj.GenerateResource.cache
 D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.AssemblyInfoInputs.cache
 D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.AssemblyInfo.cs
@@ -55,3 +54,7 @@ D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\Coliseu
 D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.pdb
 D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.genruntimeconfig.cache
 D:\projects\coliseum-gamestore\ColiseumGamestore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\projects\coliseum-gamestore\ColiseumGamestore\bin\Debug\netcoreapp3.1\Repositories.dll
+D:\projects\coliseum-gamestore\ColiseumGamestore\bin\Debug\netcoreapp3.1\Repositories.pdb
+D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.Home.resources
+D:\projects\coliseum-gamestore\ColiseumGamestore\obj\Debug\netcoreapp3.1\ColiseumGamestore.GameDetails.resources

@@ -12,7 +12,7 @@
         public string Name { get; set; }
 
         [Required]
-        public int Founded { get; set; }
+        public string Description { get; set; }
 
         public ICollection<GameDetail> GameDetails { get; set; }
     }

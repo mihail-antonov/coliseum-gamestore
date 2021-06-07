@@ -4,6 +4,7 @@
     using Models;
     using System.Linq;
     using Microsoft.EntityFrameworkCore;
+
     using System.Collections.Generic;
 
     public class GameRepository : IGameRepository
@@ -38,6 +39,7 @@
         {
             _appDbContext.Games.Add(game);
             _appDbContext.SaveChanges();
+            return game.Id;
         }
 
         public void Update(Game game)
@@ -46,6 +48,7 @@
             oldGame.Title = game.Title;
             oldGame.Price = game.Price;
             oldGame.Released = game.Released;
+            oldGame.StudioId = game.StudioId;
             _appDbContext.Entry(oldGame).State = EntityState.Modified;
             _appDbContext.SaveChanges();
         }
