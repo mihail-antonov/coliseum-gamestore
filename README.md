@@ -1,2 +1,2 @@
 # coliseum-gamestore
- Coliseum is a basic gamestore desktop app built on .NET framework for an university exam.
+ Coliseum gamestore is a basic CRUD desktop app built on C#'s .NET framework for an university subject - .NET programming basics.
